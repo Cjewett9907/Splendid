@@ -109,68 +109,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
 /***/ }),
 
-/***/ "./node_modules/classnames/index.js":
-/*!******************************************!*\
-  !*** ./node_modules/classnames/index.js ***!
-  \******************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
-  Copyright (c) 2017 Jed Watson.
-  Licensed under the MIT License (MIT), see
-  http://jedwatson.github.io/classnames
-*/
-/* global define */
-
-(function () {
-	'use strict';
-
-	var hasOwn = {}.hasOwnProperty;
-
-	function classNames () {
-		var classes = [];
-
-		for (var i = 0; i < arguments.length; i++) {
-			var arg = arguments[i];
-			if (!arg) continue;
-
-			var argType = typeof arg;
-
-			if (argType === 'string' || argType === 'number') {
-				classes.push(arg);
-			} else if (Array.isArray(arg) && arg.length) {
-				var inner = classNames.apply(null, arg);
-				if (inner) {
-					classes.push(inner);
-				}
-			} else if (argType === 'object') {
-				for (var key in arg) {
-					if (hasOwn.call(arg, key) && arg[key]) {
-						classes.push(key);
-					}
-				}
-			}
-		}
-
-		return classes.join(' ');
-	}
-
-	if (typeof module !== 'undefined' && module.exports) {
-		classNames.default = classNames;
-		module.exports = classNames;
-	} else if (true) {
-		// register as 'classnames', consistent with npm package name
-		!(__WEBPACK_AMD_DEFINE_ARRAY__ = [], __WEBPACK_AMD_DEFINE_RESULT__ = (function () {
-			return classNames;
-		}).apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__),
-				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
-	} else {}
-}());
-
-
-/***/ }),
-
 /***/ "./node_modules/create-react-class/factory.js":
 /*!****************************************************!*\
   !*** ./node_modules/create-react-class/factory.js ***!
@@ -23089,24 +23027,57 @@ __webpack_require__.r(__webpack_exports__);
 var Overlay = function Overlay() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "overlay-flexer"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "MODEL S"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "GAME SPACE!!!"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "specs-flexer"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    className: "thumbnail",
-    src: "https://img.pngio.com/up-to-speedpng-speed-png-424_236.png",
-    alt: "speed icon"
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    className: "thumbnail",
-    src: "https://www.stickpng.com/assets/images/5a059a879cf05203c4b6045a.png",
-    alt: "power icon"
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    className: "thumbnail",
-    src: "https://good-design.org/wp-content/uploads/2018/03/Good-Design-Award_of-the-Year_RGB_BLK_Logo.png",
-    alt: "award icon"
-  }))));
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "card"
+  }, "X a card X "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "card"
+  }, "X a card X "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "card"
+  }, "X a card X "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "card"
+  }, "X a card X "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "card"
+  }, "X a card X "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "card"
+  }, "X a card X "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "card"
+  }, "X a card X "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "card"
+  }, "X a card X "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "card"
+  }, "X a card X "))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Overlay);
+
+/***/ }),
+
+/***/ "./player_hand.jsx":
+/*!*************************!*\
+  !*** ./player_hand.jsx ***!
+  \*************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/react.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+ // import './app_style.css';
+
+var PlayerHand = function PlayerHand() {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "player-hand-flexer"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "Player turn"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "take-options"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "take red"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "take blue"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "take green"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "take white"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "take black"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "take gold")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "action-buttons"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "TAKE ACTION"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "CLEAR"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "OPTIONS")));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (PlayerHand);
 
 /***/ }),
 
@@ -23121,8 +23092,7 @@ var Overlay = function Overlay() {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/react.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! classnames */ "./node_modules/classnames/index.js");
-/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _player_hand__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./player_hand */ "./player_hand.jsx");
 /* harmony import */ var _toolbar__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./toolbar */ "./toolbar.jsx");
 /* harmony import */ var _overlay__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./overlay */ "./overlay.jsx");
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
@@ -23235,13 +23205,7 @@ function (_Component) {
     value: function render() {
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_toolbar__WEBPACK_IMPORTED_MODULE_2__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "div1"
-      }, " "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_overlay__WEBPACK_IMPORTED_MODULE_3__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "div2"
-      }, " "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "div3"
-      }, " "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "div4"
-      }, " "));
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_player_hand__WEBPACK_IMPORTED_MODULE_1__["default"], null)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_overlay__WEBPACK_IMPORTED_MODULE_3__["default"], null));
     }
   }]);
 
@@ -23269,8 +23233,8 @@ var ToolBar = function ToolBar() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "toolbar-flexer"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "TESLA"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "models"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "MODEL S"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "MODEL 3"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "MODEL X"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "MODEL Y"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "ROADSTER"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "ENERGY")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "take-options"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "take red"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "take blue"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "take green"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "take white"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "take black"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "take gold")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "user-auth"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "SHOP"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "SIGN IN"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "OPTIONS /// ")));
 };

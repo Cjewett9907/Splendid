@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import CX from 'classnames'
+import PlayerHand from './player_hand'
 import ToolBar from './toolbar'
 // import './app_style.css'
 import Overlay from './overlay'
@@ -68,11 +68,14 @@ class TeslaHero extends Component{
         return(
             <div>
                 <ToolBar />
-                <div className="div1"> </div>
+                <div className="div1"> 
+                <PlayerHand />
+                </div>
                 <Overlay />
-                <div className="div2"> </div>
+                {/* <div className="div2"> </div>
                 <div className="div3"> </div>
-                <div className="div4"> </div>
+                <div className="div4"> </div> */}
+                
             </div>
         );
     }

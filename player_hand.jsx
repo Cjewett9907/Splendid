@@ -1,12 +1,12 @@
 import React from 'react';
 // import './app_style.css';
 
-const ToolBar = () => {
+const PlayerHand = () => {
    
         return(
             
-            <div className="toolbar-flexer">
-                <h4>TESLA</h4>
+            <div className="player-hand-flexer">
+                <h4>Player turn</h4>
                     <div className='take-options'>
                         <h4>take red</h4>
                         <h4>take blue</h4>
@@ -16,10 +16,10 @@ const ToolBar = () => {
                         <h4>take gold</h4>
                     </div>
 
-                    <div className='user-auth'>
-                        <h4>SHOP</h4>
-                        <h4>SIGN IN</h4>
-                        <h4>OPTIONS /// </h4>
+                    <div className='action-buttons'>
+                        <h4>TAKE ACTION</h4>
+                        <h4>CLEAR</h4>
+                        <h4>OPTIONS</h4>
                     </div>
                 
             </div>
@@ -29,4 +29,4 @@ const ToolBar = () => {
 
 
 
-export default ToolBar
+export default PlayerHand
