@@ -23027,27 +23027,231 @@ __webpack_require__.r(__webpack_exports__);
 var Overlay = function Overlay() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "overlay-flexer"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "GAME SPACE!!!"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "bank"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "THE BANK"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "bank-field"
+  }, "RED", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "coin-holder"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "coin-red"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "coin-red"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "coin-red"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "coin-red"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "coin-red"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "coin-red"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "coin-red"
+  }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "bank-field"
+  }, "BLUE", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "coin-holder"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "coin-blue"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "coin-blue"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "coin-blue"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "coin-blue"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "coin-blue"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "coin-blue"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "coin-blue"
+  }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "bank-field"
+  }, "GREEN", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "coin-holder"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "coin-green"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "coin-green"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "coin-green"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "coin-green"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "coin-green"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "coin-green"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "coin-green"
+  }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "bank-field"
+  }, "WHITE", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "coin-holder"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "coin-white"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "coin-white"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "coin-white"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "coin-white"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "coin-white"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "coin-white"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "coin-white"
+  }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "bank-field"
+  }, "BLACK", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "coin-holder"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "coin-black"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "coin-black"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "coin-black"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "coin-black"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "coin-black"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "coin-black"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "coin-black"
+  }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "bank-field"
+  }, "GOLD", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "coin-holder"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "coin-gold"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "coin-gold"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "coin-gold"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "coin-gold"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "coin-gold"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "coin-gold"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "coin-gold"
+  })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "specs-flexer"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "card"
+    className: "row-flexer"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "card-down-n"
+  }, "X a card X "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "card-n"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    className: "thumb-img-n",
+    src: "https://images.fineartamerica.com/images-medium-large-5/portrait-of-a-merchant-jan-gossaert.jpg",
+    alt: ""
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "card-n"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    className: "thumb-img-n",
+    src: "https://images.fineartamerica.com/images-medium-large-5/portrait-of-a-merchant-jan-gossaert.jpg",
+    alt: ""
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "card-n"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    className: "thumb-img-n",
+    src: "https://images.fineartamerica.com/images-medium-large-5/portrait-of-a-merchant-jan-gossaert.jpg",
+    alt: ""
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "card-n"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    className: "thumb-img-n",
+    src: "https://images.fineartamerica.com/images-medium-large-5/portrait-of-a-merchant-jan-gossaert.jpg",
+    alt: ""
+  }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "row-flexer"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "card-down"
   }, "X a card X "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "card"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    className: "thumb-img",
+    src: "https://www.donrobertojewelers.com/media/catalog/product/cache/1/image/988x988/9df78eab33525d08d6e5fb8d27136e95/1/3/1335030200_ruby.jpg",
+    alt: ""
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "card"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    className: "thumb-img",
+    src: "https://www.donrobertojewelers.com/media/catalog/product/cache/1/image/988x988/9df78eab33525d08d6e5fb8d27136e95/1/3/1335030200_ruby.jpg",
+    alt: ""
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "card"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    className: "thumb-img",
+    src: "https://www.donrobertojewelers.com/media/catalog/product/cache/1/image/988x988/9df78eab33525d08d6e5fb8d27136e95/1/3/1335030200_ruby.jpg",
+    alt: ""
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "card"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    className: "thumb-img",
+    src: "https://www.donrobertojewelers.com/media/catalog/product/cache/1/image/988x988/9df78eab33525d08d6e5fb8d27136e95/1/3/1335030200_ruby.jpg",
+    alt: ""
+  }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "row-flexer"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "card-down"
   }, "X a card X "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "card"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    className: "thumb-img",
+    src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgD9-InpfFAi1nRRAmiiTzb0c-4c0XEOT19oPL-PfqdVNwjoZI&s",
+    alt: ""
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "card"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    className: "thumb-img",
+    src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgD9-InpfFAi1nRRAmiiTzb0c-4c0XEOT19oPL-PfqdVNwjoZI&s",
+    alt: ""
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "card"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    className: "thumb-img",
+    src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgD9-InpfFAi1nRRAmiiTzb0c-4c0XEOT19oPL-PfqdVNwjoZI&s",
+    alt: ""
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "card"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    className: "thumb-img",
+    src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgD9-InpfFAi1nRRAmiiTzb0c-4c0XEOT19oPL-PfqdVNwjoZI&s",
+    alt: ""
+  }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "row-flexer"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "card-down"
   }, "X a card X "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "card"
-  }, "X a card X "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    className: "thumb-img",
+    src: "https://www.preciousmetals.com/pub/media/mageplaza/blog/post/uploads/2014/07/silver-eagle-coin-stacks.jpg",
+    alt: ""
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "card"
-  }, "X a card X "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    className: "thumb-img",
+    src: "https://www.preciousmetals.com/pub/media/mageplaza/blog/post/uploads/2014/07/silver-eagle-coin-stacks.jpg",
+    alt: ""
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "card"
-  }, "X a card X "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    className: "thumb-img",
+    src: "https://www.preciousmetals.com/pub/media/mageplaza/blog/post/uploads/2014/07/silver-eagle-coin-stacks.jpg",
+    alt: ""
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "card"
-  }, "X a card X "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "card"
-  }, "X a card X "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "card"
-  }, "X a card X "))));
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    className: "thumb-img",
+    src: "https://www.preciousmetals.com/pub/media/mageplaza/blog/post/uploads/2014/07/silver-eagle-coin-stacks.jpg",
+    alt: ""
+  }))))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Overlay);
@@ -23105,13 +23309,13 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
 function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
 
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
 function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
 
 
 
@@ -23135,77 +23339,57 @@ function (_Component) {
       imageIdx: 0,
       message: "Nope",
       imageArray: ["div1", "div2", "div3", "div4"],
-      animating: false
+      animating: false // this.handleScroll = this.handleScroll.bind(this);
+
     };
-    _this.handleScroll = _this.handleScroll.bind(_assertThisInitialized(_assertThisInitialized(_this)));
     return _this;
   }
 
   _createClass(TeslaHero, [{
     key: "componentDidMount",
-    value: function componentDidMount() {
-      document.addEventListener('mousewheel', this.handleScroll);
+    value: function componentDidMount() {// document.addEventListener('mousewheel', this.handleScroll ); 
     }
   }, {
     key: "componentWillUnmount",
-    value: function componentWillUnmount() {
-      document.removeEventListener('mousewheel', this.handleScroll);
-    }
-  }, {
-    key: "handleScroll",
-    value: function handleScroll(e) {
-      var _this2 = this;
+    value: function componentWillUnmount() {} // document.removeEventListener('mousewheel', this.handleScroll);
+    // handleScroll(e) {
+    //     // animating flag minimizes the actions of a scroll event via the setTimeout function
+    //     //  this is an attempt to counteract apple products 'kinetic mouse effect' where the mouse continues to scroll
+    //     //  long after the sweeping motion was initially made...
+    //         if(!this.state.animating){ 
+    //             this.setState({animating: true });
+    //             // simulated animation lag to slow the scrolling to 1 image at a time
+    //             setTimeout(() => {
+    //                 this.setState({animating: false});
+    //             }, 800)
+    //             // determines if the mouse was scrolled up or down resulting in 1 or -1
+    //             var delta = Math.max(-1, Math.min(1, (e.wheelDelta)));
+    //         // if scrolling down
+    //             if(delta === -1){
+    //                 // and within bounds
+    //                 if(this.state.imageIdx < this.state.imageArray.length - 1){
+    //                     let imageIdx = this.state.imageIdx + 1
+    //                     this.setState({ imageIdx: imageIdx})
+    //                 }   
+    //         // if scrolling up 
+    //             } else if(delta === 1){
+    //                 // and within bounds
+    //                 if(this.state.imageIdx > 0){
+    //                     let imageIdx = this.state.imageIdx - 1
+    //                     this.setState({ imageIdx: imageIdx})
+    //                 }    
+    //             }
+    //             // scrollsBy height of window in the direction of the scroll
+    //             window.scrollBy({left: 0, top: (window.innerHeight * -delta), behavior: 'smooth'});
+    //         }
+    // }
 
-      // animating flag minimizes the actions of a scroll event via the setTimeout function
-      //  this is an attempt to counteract apple products 'kinetic mouse effect' where the mouse continues to scroll
-      //  long after the sweeping motion was initially made...
-      if (!this.state.animating) {
-        this.setState({
-          animating: true
-        }); // simulated animation lag to slow the scrolling to 1 image at a time
-
-        setTimeout(function () {
-          _this2.setState({
-            animating: false
-          });
-        }, 800); // determines if the mouse was scrolled up or down resulting in 1 or -1
-
-        var delta = Math.max(-1, Math.min(1, e.wheelDelta)); // if scrolling down
-
-        if (delta === -1) {
-          // and within bounds
-          if (this.state.imageIdx < this.state.imageArray.length - 1) {
-            var imageIdx = this.state.imageIdx + 1;
-            this.setState({
-              imageIdx: imageIdx
-            });
-          } // if scrolling up 
-
-        } else if (delta === 1) {
-          // and within bounds
-          if (this.state.imageIdx > 0) {
-            var _imageIdx = this.state.imageIdx - 1;
-
-            this.setState({
-              imageIdx: _imageIdx
-            });
-          }
-        } // scrollsBy height of window in the direction of the scroll
-
-
-        window.scrollBy({
-          left: 0,
-          top: window.innerHeight * -delta,
-          behavior: 'smooth'
-        });
-      }
-    }
   }, {
     key: "render",
     value: function render() {
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_toolbar__WEBPACK_IMPORTED_MODULE_2__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "div1"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_player_hand__WEBPACK_IMPORTED_MODULE_1__["default"], null)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_overlay__WEBPACK_IMPORTED_MODULE_3__["default"], null));
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_toolbar__WEBPACK_IMPORTED_MODULE_2__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_player_hand__WEBPACK_IMPORTED_MODULE_1__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_overlay__WEBPACK_IMPORTED_MODULE_3__["default"], null)));
     }
   }]);
 
@@ -23232,7 +23416,7 @@ __webpack_require__.r(__webpack_exports__);
 var ToolBar = function ToolBar() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "toolbar-flexer"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "TESLA"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "Splendid"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "take-options"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "take red"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "take blue"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "take green"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "take white"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "take black"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "take gold")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "user-auth"

@@ -1,12 +1,69 @@
+.coin-holder{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.coin-red{
+    background-color: red;
+    border-radius: 15px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    box-shadow: 2px -2px maroon;
+}
+.coin-blue{
+    background-color: blue;
+    border-radius: 15px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    box-shadow: 2px -2px darkblue;
+}
+.coin-green{
+    background-color: green;
+    border-radius: 15px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    box-shadow: 2px -2px darkgreen;
+}
+.coin-white{
+    background-color: white;
+    border-radius: 15px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    box-shadow: 2px -2px grey;
+}
+.coin-black{
+    background-color: black;
+    border-radius: 15px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    box-shadow: 2px -2px darkslategrey;
+}
+.coin-gold{
+    background-color: gold;
+    border-radius: 15px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    box-shadow: 2px -2px darkgoldenrod;
+}
+
 
 
 .player-hand-flexer{
-    position: absolute;
+    /* position: absolute; */
+    position: fixed;
     bottom: 0;
     display: flex;
     flex-direction: row;
     width: 100%;
     justify-content: space-between;
+    z-index: 3;
+    background-color: grey;
 }
 
 .take-options{
@@ -30,9 +87,11 @@
 }
 
 div[class^="div"]{
-    width: 100vw;
-    height: 100vh;
-    max-width:100%;
+    width: 100%;
+    height: 750px;
+
+    /* max-width:100%; */
+    
     background-size: cover;
 }
 
@@ -46,15 +105,18 @@ div[class^="div"]{
     height: 50px;
     justify-content: space-between;
     /* color: rgb(112, 109, 109); */
+    background-color: blue;
+    min-width: 700px;
 }
 .overlay-flexer{
     position: absolute;
-    top: 20%;
+    top: 10px;
+    /* left: 10%; */
     display: flex;
     flex-direction: column;
-    z-index: 10;
+    z-index: 2;
     height: 70vh;
-    width: 100vw;
+    width: 70vw;
     
     align-items: center;
     justify-content: space-between;
@@ -62,18 +124,120 @@ div[class^="div"]{
 }
 
 .specs-flexer{
+    position: absolute;
+    top: 10vh;
+    left: 25vw;
+    margin: 0;
     display: flex;
     flex-direction: row;
     z-index: 10;
+    align-content: left;
+    /* justify-content: space-between; */
+    width: 40vw;
+    max-height: 600px;
+    flex-wrap: wrap;
+    margin-left: 30px;
+}
+.row-flexer{
+    /* position: absolute; */
+    top: 10vh;
+    left: 25vw;
+    /* margin: 0; */
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    /* z-index: 10; */
+    /* align-content: left; */
     justify-content: space-between;
-    width: 70vw;
+    width: 700px;
+    min-width: 700px;
+    /* max-height: 600px; */
+    flex-wrap: wrap;
+}
+
+.card-pile{
+     /* position: absolute; */
+     top: 10vh;
+     left: 25vw;
+     /* margin: 0; */
+     display: flex;
+     flex-direction: row;
+     margin-top: 10px;
+     /* z-index: 10; */
+     /* align-content: left; */
+     justify-content: space-between;
+     width: 400px;
+     min-width: 400px;
+     /* max-height: 600px; */
+     flex-wrap: wrap;
+}
+
+.bank{
+    position: absolute;
+    top: 10vh;
+    left: 5vw;
+    width: 20vw;
+    background-color: green;
+    height: 510px;
+    margin-top: 10px;
+    
 }
 
 
 .card{
+    /* position: relative; */
+    /* top: 0; */
     width: 80px;
     height: 120px;
     background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-bottom: 10px;
+
+}
+.card-n{
+    /* position: relative; */
+    /* top: 0; */
+    width: 80px;
+    height: 80px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-bottom: 10px;
+
+}
+.card-down{
+    position: relative;
+    /* top: 0; */
+    width: 80px;
+    height: 120px;
+    background-color: slategray;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-bottom: 10px;
+
+}
+.card-down-n{
+    position: relative;
+    /* top: 0; */
+    width: 80px;
+    height: 80px;
+    background-color: slategray;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-bottom: 10px;
+
+}
+.card-down-deck{
+    position: relative;
+    /* top: 0; */
+    top: 5px;
+    width: 80px;
+    height: 120px;
+    background-color: slategray;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-bottom: 10px;
 
 }
 
@@ -103,13 +267,50 @@ h4:hover {
     margin: 20px;
 }
 
+.thumb-img{
+    width: 80px;
+    height: 120px;
+    /* background-size: cover; */
+    border-radius: 5px;
+    border: 1px solid black;
+}
+.thumb-img:hover{
+    z-index: 15;
+    /* width: 200px;
+    height: 300px; */
+    transform: scale(2.8, 2.8);
+    border-radius: 5px;
+    border: 1px solid black;
+    box-shadow: 1px -1px #080501;
+    /* background-size: cover; */
+}
 
+.bank-field{
+    height: 70px;
+    margin: 10px;
+}
+.thumb-img-n{
+    width: 80px;
+    height: 80px;
+    /* background-size: cover; */
+    border-radius: 5px;
+    border: 1px solid black;
+}
+.thumb-img-n:hover{
+   
+    transform: scale(2.8, 2.8);
+    border-radius: 5px;
+    border: 1px solid black;
+    /* background-size: cover; */
+}
 
 
 .div1 {
+    width: 100%;
+    min-width: 700px;
     background-color: red;
     background-image: url('https://image.freepik.com/free-photo/old-wood-background-horizontal-composition-wood-texture_141291-149.jpg');
-    
+    background-size: cover;
 }
 .div2 {
     background-color: blue;
@@ -129,7 +330,12 @@ h4:hover {
 
 
 body {
-    display: block;
-    overflow: hidden;
+    min-height: 500px;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    /* display: block;
+    overflow: hidden; */
  
 }

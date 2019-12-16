@@ -6,7 +6,7 @@ const ToolBar = () => {
         return(
             
             <div className="toolbar-flexer">
-                <h4>TESLA</h4>
+                <h4>Splendid</h4>
                     <div className='take-options'>
                         <h4>take red</h4>
                         <h4>take blue</h4>
