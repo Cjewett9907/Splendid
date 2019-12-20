@@ -15,7 +15,7 @@ const PlayerHand = () => {
                         <h4>take black</h4>
                         <h4>take gold</h4>
                     </div>
-
+                    <section className= "show-section"></section>
                     <div className='action-buttons'>
                         <h4>TAKE ACTION</h4>
                         <h4>CLEAR</h4>

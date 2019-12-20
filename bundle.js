@@ -23022,9 +23022,16 @@ module.exports = __webpack_require__(/*! ./lib/React */ "./node_modules/react/li
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/react.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _tesla_hero_object__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./tesla_hero_object */ "./tesla_hero_object.jsx");
+
 
 
 var Overlay = function Overlay() {
+  var saysomething = function saysomething(ev) {
+    console.log("HUZZAH");
+    console.log("event.target is ", ev.target);
+  };
+
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "overlay-flexer"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -23032,112 +23039,34 @@ var Overlay = function Overlay() {
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "THE BANK"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "bank-field"
   }, "RED", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", {
-    className: "coin-holder"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "coin-red"
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "coin-red"
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "coin-red"
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "coin-red"
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "coin-red"
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "coin-red"
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "coin-red"
-  }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "coin-holder",
+    onClick: saysomething
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "bank-field"
   }, "BLUE", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", {
-    className: "coin-holder"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "coin-blue"
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "coin-blue"
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "coin-blue"
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "coin-blue"
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "coin-blue"
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "coin-blue"
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "coin-blue"
-  }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "coin-holder",
+    onClick: saysomething
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "bank-field"
   }, "GREEN", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", {
-    className: "coin-holder"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "coin-green"
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "coin-green"
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "coin-green"
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "coin-green"
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "coin-green"
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "coin-green"
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "coin-green"
-  }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "coin-holder",
+    onClick: saysomething
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "bank-field"
   }, "WHITE", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", {
-    className: "coin-holder"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "coin-white"
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "coin-white"
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "coin-white"
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "coin-white"
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "coin-white"
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "coin-white"
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "coin-white"
-  }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "coin-holder",
+    onClick: saysomething
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "bank-field"
   }, "BLACK", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", {
-    className: "coin-holder"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "coin-black"
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "coin-black"
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "coin-black"
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "coin-black"
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "coin-black"
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "coin-black"
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "coin-black"
-  }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "coin-holder",
+    onClick: saysomething
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "bank-field"
   }, "GOLD", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", {
-    className: "coin-holder"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "coin-gold"
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "coin-gold"
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "coin-gold"
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "coin-gold"
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "coin-gold"
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "coin-gold"
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "coin-gold"
-  })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "coin-holder",
+    onClick: saysomething
+  }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "specs-flexer"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "row-flexer"
@@ -23276,7 +23205,9 @@ var PlayerHand = function PlayerHand() {
     className: "player-hand-flexer"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "Player turn"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "take-options"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "take red"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "take blue"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "take green"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "take white"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "take black"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "take gold")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "take red"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "take blue"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "take green"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "take white"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "take black"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "take gold")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", {
+    className: "show-section"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "action-buttons"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "TAKE ACTION"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "CLEAR"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "OPTIONS")));
 };
@@ -23478,21 +23409,40 @@ function (_Component) {
 
       for (var i = 0; i < current_colors.length; i++) {
         var cSection = sections[i];
-        var cColor = current_colors[i]; // numCoins is not fucntional yet 'undefined'
+        var _cColor = current_colors[i]; // numCoins is not fucntional yet 'undefined'
 
-        var numCoins = this.state.bank.coins.cColor;
-        console.log("cSection is ", cSection);
-        console.log("cColor is ", cColor);
-        console.log("numCOins is ", numCoins);
-        console.log("this.state.bank ", this.state.bank.coins);
-        console.log("this.state.bank ", this.state.bank.coins.cColor);
+        var numCoins = this.state.bank.coins[_cColor];
 
         if (numCoins) {
           for (var _i = 0; _i < numCoins; _i++) {
             // cSection is not a type of node???
-            cSection.appendChild(document.createElement('div').className = "coin-" + cColor);
+            var newNode = document.createElement('div');
+            newNode.className = "coin-".concat(_cColor);
+            newNode.coincolor = "".concat(_cColor);
+            console.log("new node is", newNode);
+            cSection.appendChild(newNode);
           }
         }
+      }
+    }
+  }, {
+    key: "isvalidmove",
+    value: function isvalidmove() {
+      return true;
+    }
+  }, {
+    key: "takecoin",
+    value: function takecoin(ev) {
+      if (isvalidmove) {
+        var new_coin_total = this.state.bank.coins[ev.target.coincolor] - 1;
+        this.setState(this.state.bank.coins = new_coin_total);
+        console.log("event is ", ev);
+        var coin = document.createElement('div');
+        coin.className = "coin-".concat(cColor);
+        coin.style.width = '200px';
+        coin.style.length = '200px';
+        var showsection = document.querySelectorAll("section[class^='coin-show']");
+        showsection.appendChild(coin);
       }
     }
   }, {
@@ -23500,7 +23450,9 @@ function (_Component) {
     value: function render() {
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "div1"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_toolbar__WEBPACK_IMPORTED_MODULE_2__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_player_hand__WEBPACK_IMPORTED_MODULE_1__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_overlay__WEBPACK_IMPORTED_MODULE_3__["default"], null)));
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_toolbar__WEBPACK_IMPORTED_MODULE_2__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_player_hand__WEBPACK_IMPORTED_MODULE_1__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_overlay__WEBPACK_IMPORTED_MODULE_3__["default"], {
+        takecoin: this.takecoin
+      })));
     }
   }]);
 

@@ -1,78 +1,49 @@
 import React from 'react'
+import TeslaHero from './tesla_hero_object'
 
 
 const Overlay = () =>{
+
+    const saysomething = (ev) => {
+        console.log("HUZZAH");
+        console.log("event.target is ", ev.target)
+    };
+
     return(
         <div className="overlay-flexer">
 
 
             <div className="bank">
                 <h1>THE BANK</h1>
-                <div className="bank-field">RED
-                    <section className="coin-holder">
+                <div className="bank-field" >RED
+                    <section className="coin-holder" onClick={saysomething}>
                         {/* this token zone will be handled by state */}
-                        <div className="coin-red"></div>
-                        <div className="coin-red"></div>
-                        <div className="coin-red"></div>
-                        <div className="coin-red"></div>
-                        <div className="coin-red"></div>
-                        <div className="coin-red"></div>
-                        <div className="coin-red"></div>
+                    
                     </section>
                 </div>
                 <div className="bank-field">BLUE
-                    <section className="coin-holder">
-                            <div className="coin-blue"></div>
-                            <div className="coin-blue"></div>
-                            <div className="coin-blue"></div>
-                            <div className="coin-blue"></div>
-                            <div className="coin-blue"></div>
-                            <div className="coin-blue"></div>
-                            <div className="coin-blue"></div>
+                    <section className="coin-holder" onClick={saysomething}>
+                            
                         </section>
                     </div>
                 <div className="bank-field">GREEN
-                    <section className="coin-holder">
-                        <div className="coin-green"></div>
-                        <div className="coin-green"></div>
-                        <div className="coin-green"></div>
-                        <div className="coin-green"></div>
-                        <div className="coin-green"></div>
-                        <div className="coin-green"></div>
-                        <div className="coin-green"></div>
+                    <section className="coin-holder" onClick={saysomething}>
+                        
                     </section>
                 </div>
                 <div className="bank-field">WHITE
-                    <section className="coin-holder">
-                        <div className="coin-white"></div>
-                        <div className="coin-white"></div>
-                        <div className="coin-white"></div>
-                        <div className="coin-white"></div>
-                        <div className="coin-white"></div>
-                        <div className="coin-white"></div>
-                        <div className="coin-white"></div>
+                    <section className="coin-holder" onClick={saysomething}>
+                       
                     </section>
                 </div>
                 <div className="bank-field">BLACK
-                    <section className="coin-holder">
-                        <div className="coin-black"></div>
-                        <div className="coin-black"></div>
-                        <div className="coin-black"></div>
-                        <div className="coin-black"></div>
-                        <div className="coin-black"></div>
-                        <div className="coin-black"></div>
-                        <div className="coin-black"></div>
+                    <section className="coin-holder" onClick={saysomething}>
+                      
                     </section>
                 </div>
                 <div className="bank-field">GOLD
-                    <section className="coin-holder">
-                        <div className="coin-gold"></div>
-                        <div className="coin-gold"></div>
-                        <div className="coin-gold"></div>
-                        <div className="coin-gold"></div>
-                        <div className="coin-gold"></div>
-                        <div className="coin-gold"></div>
-                        <div className="coin-gold"></div>
+                    <section className="coin-holder" onClick={saysomething}>
+                     
                     </section>
                 </div>
             </div>

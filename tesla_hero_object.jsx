@@ -151,22 +151,41 @@ class TeslaHero extends Component{
             let cSection = sections[i]
             let cColor = current_colors[i]
             // numCoins is not fucntional yet 'undefined'
-            let numCoins = this.state.bank.coins.cColor
-
-            console.log("cSection is ", cSection);
-            console.log("cColor is ", cColor);
-            console.log("numCOins is ", numCoins);
-            console.log("this.state.bank ", this.state.bank.coins);
-            console.log("this.state.bank ", this.state.bank.coins.cColor);
+            let numCoins = this.state.bank.coins[cColor]
             
-            
-
             if (numCoins){
                 for(let i = 0; i < numCoins; i++){
                     // cSection is not a type of node???
-                    cSection.appendChild(document.createElement('div').className = "coin-" + cColor)
+                    let newNode = document.createElement('div');
+                    newNode.className = `coin-${cColor}`;
+                    newNode.coincolor = `${cColor}`
+                    console.log("new node is", newNode)
+                    cSection.appendChild(newNode);
                 }
             }
+        }
+    }
+
+    isvalidmove(){
+        return true
+    }
+
+    takecoin(ev){
+        if (isvalidmove){
+            
+            let new_coin_total = this.state.bank.coins[ev.target.coincolor] - 1
+            this.setState(this.state.bank.coins = new_coin_total)
+
+            console.log("event is ", ev)
+            let coin = document.createElement('div');
+            coin.className = `coin-${cColor}`;
+            coin.style.width = '200px';
+            coin.style.length = '200px';
+            let showsection = document.querySelectorAll("section[class^='coin-show']")
+            showsection.appendChild(coin)
+
+           
+
         }
     }
 
@@ -180,7 +199,7 @@ class TeslaHero extends Component{
                 <ToolBar />
                 <PlayerHand />
                 
-                <Overlay />
+                <Overlay takecoin={this.takecoin}/>
               
                 </div>
             </div>
