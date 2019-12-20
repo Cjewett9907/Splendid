@@ -23031,7 +23031,7 @@ var Overlay = function Overlay() {
     className: "bank"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "THE BANK"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "bank-field"
-  }, "RED", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, "RED", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", {
     className: "coin-holder"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "coin-red"
@@ -23049,7 +23049,7 @@ var Overlay = function Overlay() {
     className: "coin-red"
   }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "bank-field"
-  }, "BLUE", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, "BLUE", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", {
     className: "coin-holder"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "coin-blue"
@@ -23067,7 +23067,7 @@ var Overlay = function Overlay() {
     className: "coin-blue"
   }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "bank-field"
-  }, "GREEN", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, "GREEN", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", {
     className: "coin-holder"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "coin-green"
@@ -23085,7 +23085,7 @@ var Overlay = function Overlay() {
     className: "coin-green"
   }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "bank-field"
-  }, "WHITE", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, "WHITE", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", {
     className: "coin-holder"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "coin-white"
@@ -23103,7 +23103,7 @@ var Overlay = function Overlay() {
     className: "coin-white"
   }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "bank-field"
-  }, "BLACK", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, "BLACK", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", {
     className: "coin-holder"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "coin-black"
@@ -23121,7 +23121,7 @@ var Overlay = function Overlay() {
     className: "coin-black"
   }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "bank-field"
-  }, "GOLD", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, "GOLD", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", {
     className: "coin-holder"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "coin-gold"
@@ -23309,9 +23309,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
 function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
 
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
 function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
 
@@ -23336,54 +23336,165 @@ function (_Component) {
     _this = _possibleConstructorReturn(this, _getPrototypeOf(TeslaHero).call(this, props));
     _this.state = {
       error: "RUT ROH",
-      imageIdx: 0,
-      message: "Nope",
-      imageArray: ["div1", "div2", "div3", "div4"],
-      animating: false
-    }; // this.handleScroll = this.handleScroll.bind(this);
-
+      colors: ["red", "blue", "green", "white", "black", "gold"],
+      bank: {
+        coins: {
+          red: 7,
+          blue: 7,
+          green: 7,
+          white: 7,
+          black: 7,
+          gold: 5
+        }
+      },
+      players: [{
+        "player1": {
+          name: "bob",
+          disposition: "builder",
+          avatar: "",
+          coins: {
+            red: 0,
+            blue: 0,
+            green: 0,
+            white: 0,
+            black: 0,
+            gold: 0
+          },
+          cards: {
+            red: 0,
+            blue: 0,
+            green: 0,
+            white: 0,
+            black: 0
+          },
+          victoryPoints: 0
+        }
+      }, {
+        "player2": {
+          name: "Veruca",
+          disposition: "Selfish",
+          avatar: "",
+          coins: {
+            red: 0,
+            blue: 0,
+            green: 0,
+            white: 0,
+            black: 0,
+            gold: 0
+          },
+          cards: {
+            red: 0,
+            blue: 0,
+            green: 0,
+            white: 0,
+            black: 0
+          },
+          victoryPoints: 0
+        }
+      }, {
+        "player3": {
+          name: "Jerky",
+          disposition: "Jerk",
+          avatar: "",
+          coins: {
+            red: 0,
+            blue: 0,
+            green: 0,
+            white: 0,
+            black: 0,
+            gold: 0
+          },
+          cards: {
+            red: 0,
+            blue: 0,
+            green: 0,
+            white: 0,
+            black: 0
+          },
+          victoryPoints: 0
+        }
+      }, {
+        "player4": {
+          name: "TheBrain",
+          disposition: "best_route_to_15.exe",
+          avatar: "",
+          coins: {
+            red: 0,
+            blue: 0,
+            green: 0,
+            white: 0,
+            black: 0,
+            gold: 0
+          },
+          cards: {
+            red: 0,
+            blue: 0,
+            green: 0,
+            white: 0,
+            black: 0
+          },
+          victoryPoints: 0
+        }
+      }],
+      selectedCoins: [],
+      currentPlayer: {
+        "player1": {
+          name: "bob",
+          disposition: "builder",
+          avatar: "",
+          coins: {
+            red: 0,
+            blue: 0,
+            green: 0,
+            white: 0,
+            black: 0,
+            gold: 0
+          },
+          cards: {
+            red: 0,
+            blue: 0,
+            green: 0,
+            white: 0,
+            black: 0
+          },
+          victoryPoints: 0
+        }
+      }
+    };
+    _this.updatebank = _this.updatebank.bind(_assertThisInitialized(_this));
     return _this;
   }
 
   _createClass(TeslaHero, [{
     key: "componentDidMount",
-    value: function componentDidMount() {// document.addEventListener('mousewheel', this.handleScroll ); 
+    value: function componentDidMount() {
+      this.updatebank();
     }
   }, {
-    key: "componentWillUnmount",
-    value: function componentWillUnmount() {} // document.removeEventListener('mousewheel', this.handleScroll);
-    // handleScroll(e) {
-    //     // animating flag minimizes the actions of a scroll event via the setTimeout function
-    //     //  this is an attempt to counteract apple products 'kinetic mouse effect' where the mouse continues to scroll
-    //     //  long after the sweeping motion was initially made...
-    //         if(!this.state.animating){ 
-    //             this.setState({animating: true });
-    //             // simulated animation lag to slow the scrolling to 1 image at a time
-    //             setTimeout(() => {
-    //                 this.setState({animating: false});
-    //             }, 800)
-    //             // determines if the mouse was scrolled up or down resulting in 1 or -1
-    //             var delta = Math.max(-1, Math.min(1, (e.wheelDelta)));
-    //         // if scrolling down
-    //             if(delta === -1){
-    //                 // and within bounds
-    //                 if(this.state.imageIdx < this.state.imageArray.length - 1){
-    //                     let imageIdx = this.state.imageIdx + 1
-    //                     this.setState({ imageIdx: imageIdx})
-    //                 }   
-    //         // if scrolling up 
-    //             } else if(delta === 1){
-    //                 // and within bounds
-    //                 if(this.state.imageIdx > 0){
-    //                     let imageIdx = this.state.imageIdx - 1
-    //                     this.setState({ imageIdx: imageIdx})
-    //                 }    
-    //             }
-    //             // scrollsBy height of window in the direction of the scroll
-    //             window.scrollBy({left: 0, top: (window.innerHeight * -delta), behavior: 'smooth'});
-    //         }
-    // }
+    key: "updatebank",
+    value: function updatebank() {
+      var sections = document.querySelectorAll("section[class^='coin-holder']");
+      var current_colors = this.state.colors;
 
+      for (var i = 0; i < current_colors.length; i++) {
+        var cSection = sections[i];
+        var cColor = current_colors[i]; // numCoins is not fucntional yet 'undefined'
+
+        var numCoins = this.state.bank.coins.cColor;
+        console.log("cSection is ", cSection);
+        console.log("cColor is ", cColor);
+        console.log("numCOins is ", numCoins);
+        console.log("this.state.bank ", this.state.bank.coins);
+        console.log("this.state.bank ", this.state.bank.coins.cColor);
+
+        if (numCoins) {
+          for (var _i = 0; _i < numCoins; _i++) {
+            // cSection is not a type of node???
+            cSection.appendChild(document.createElement('div').className = "coin-" + cColor);
+          }
+        }
+      }
+    }
   }, {
     key: "render",
     value: function render() {

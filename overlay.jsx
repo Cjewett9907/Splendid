@@ -9,7 +9,7 @@ const Overlay = () =>{
             <div className="bank">
                 <h1>THE BANK</h1>
                 <div className="bank-field">RED
-                    <div className="coin-holder">
+                    <section className="coin-holder">
                         {/* this token zone will be handled by state */}
                         <div className="coin-red"></div>
                         <div className="coin-red"></div>
@@ -18,10 +18,10 @@ const Overlay = () =>{
                         <div className="coin-red"></div>
                         <div className="coin-red"></div>
                         <div className="coin-red"></div>
-                    </div>
+                    </section>
                 </div>
                 <div className="bank-field">BLUE
-                    <div className="coin-holder">
+                    <section className="coin-holder">
                             <div className="coin-blue"></div>
                             <div className="coin-blue"></div>
                             <div className="coin-blue"></div>
@@ -29,10 +29,10 @@ const Overlay = () =>{
                             <div className="coin-blue"></div>
                             <div className="coin-blue"></div>
                             <div className="coin-blue"></div>
-                        </div>
+                        </section>
                     </div>
                 <div className="bank-field">GREEN
-                    <div className="coin-holder">
+                    <section className="coin-holder">
                         <div className="coin-green"></div>
                         <div className="coin-green"></div>
                         <div className="coin-green"></div>
@@ -40,10 +40,10 @@ const Overlay = () =>{
                         <div className="coin-green"></div>
                         <div className="coin-green"></div>
                         <div className="coin-green"></div>
-                    </div>
+                    </section>
                 </div>
                 <div className="bank-field">WHITE
-                    <div className="coin-holder">
+                    <section className="coin-holder">
                         <div className="coin-white"></div>
                         <div className="coin-white"></div>
                         <div className="coin-white"></div>
@@ -51,10 +51,10 @@ const Overlay = () =>{
                         <div className="coin-white"></div>
                         <div className="coin-white"></div>
                         <div className="coin-white"></div>
-                    </div>
+                    </section>
                 </div>
                 <div className="bank-field">BLACK
-                    <div className="coin-holder">
+                    <section className="coin-holder">
                         <div className="coin-black"></div>
                         <div className="coin-black"></div>
                         <div className="coin-black"></div>
@@ -62,10 +62,10 @@ const Overlay = () =>{
                         <div className="coin-black"></div>
                         <div className="coin-black"></div>
                         <div className="coin-black"></div>
-                    </div>
+                    </section>
                 </div>
                 <div className="bank-field">GOLD
-                    <div className="coin-holder">
+                    <section className="coin-holder">
                         <div className="coin-gold"></div>
                         <div className="coin-gold"></div>
                         <div className="coin-gold"></div>
@@ -73,7 +73,7 @@ const Overlay = () =>{
                         <div className="coin-gold"></div>
                         <div className="coin-gold"></div>
                         <div className="coin-gold"></div>
-                    </div>
+                    </section>
                 </div>
             </div>
             <br/>

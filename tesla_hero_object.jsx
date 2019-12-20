@@ -9,59 +9,167 @@ class TeslaHero extends Component{
         super(props);
 
         this.state = { 
-            error: "RUT ROH",  
-            imageIdx: 0, 
-            message: "Nope", 
-            imageArray: ["div1","div2","div3","div4"], 
-            animating: false,
-        }
-        // this.handleScroll = this.handleScroll.bind(this);
-    }
-
-    componentDidMount() {
-        // document.addEventListener('mousewheel', this.handleScroll ); 
-    }
-
-    componentWillUnmount(){
-        // document.removeEventListener('mousewheel', this.handleScroll);
-    }
-
-    // handleScroll(e) {
-       
-    //     // animating flag minimizes the actions of a scroll event via the setTimeout function
-    //     //  this is an attempt to counteract apple products 'kinetic mouse effect' where the mouse continues to scroll
-    //     //  long after the sweeping motion was initially made...
-    //         if(!this.state.animating){ 
-    //             this.setState({animating: true });
-
-    //             // simulated animation lag to slow the scrolling to 1 image at a time
-    //             setTimeout(() => {
-    //                 this.setState({animating: false});
-    //             }, 800)
-
-    //             // determines if the mouse was scrolled up or down resulting in 1 or -1
-    //             var delta = Math.max(-1, Math.min(1, (e.wheelDelta)));
+            error: "RUT ROH",
             
-    //         // if scrolling down
-    //             if(delta === -1){
-    //                 // and within bounds
-    //                 if(this.state.imageIdx < this.state.imageArray.length - 1){
-    //                     let imageIdx = this.state.imageIdx + 1
-    //                     this.setState({ imageIdx: imageIdx})
-    //                 }   
-    //         // if scrolling up 
-    //             } else if(delta === 1){
-    //                 // and within bounds
-    //                 if(this.state.imageIdx > 0){
-    //                     let imageIdx = this.state.imageIdx - 1
-    //                     this.setState({ imageIdx: imageIdx})
-    //                 }    
-    //             }
+            colors: ["red","blue","green","white","black", "gold"],
+            
+            bank:{coins:{
+                red: 7,
+                blue: 7,
+                green: 7,
+                white: 7,
+                black: 7,
+                gold: 5
+            },},
 
-    //             // scrollsBy height of window in the direction of the scroll
-    //             window.scrollBy({left: 0, top: (window.innerHeight * -delta), behavior: 'smooth'});
-    //         }
-    // }
+            players:
+            [{"player1": {
+               name: "bob",
+               disposition: "builder",
+               avatar: "",
+               coins:{
+                   red: 0,
+                   blue: 0,
+                   green: 0,
+                   white: 0,
+                   black: 0,
+                   gold: 0
+               },
+               cards:{
+                red: 0,
+                blue: 0,
+                green: 0,
+                white: 0,
+                black: 0
+               },
+               victoryPoints: 0,
+               
+               
+            }}, {"player2": {
+                name: "Veruca",
+                disposition: "Selfish",
+                avatar: "",
+                coins:{
+                    red: 0,
+                    blue: 0,
+                    green: 0,
+                    white: 0,
+                    black: 0,
+                    gold: 0
+                },
+                cards:{
+                 red: 0,
+                 blue: 0,
+                 green: 0,
+                 white: 0,
+                 black: 0
+                },
+                victoryPoints: 0,
+                
+
+            }}, {"player3":{
+                name: "Jerky",
+                disposition: "Jerk",
+                avatar: "",
+                coins:{
+                    red: 0,
+                    blue: 0,
+                    green: 0,
+                    white: 0,
+                    black: 0,
+                    gold: 0
+                },
+                cards:{
+                 red: 0,
+                 blue: 0,
+                 green: 0,
+                 white: 0,
+                 black: 0
+                },
+                victoryPoints: 0,
+
+            }}, {"player4":{
+                name: "TheBrain",
+                disposition: "best_route_to_15.exe",
+                avatar: "",
+                coins:{
+                    red: 0,
+                    blue: 0,
+                    green: 0,
+                    white: 0,
+                    black: 0,
+                    gold: 0
+                },
+                cards:{
+                 red: 0,
+                 blue: 0,
+                 green: 0,
+                 white: 0,
+                 black: 0
+                },
+                victoryPoints: 0,
+
+            }}],
+
+            selectedCoins: [],
+
+            currentPlayer: {"player1": {
+                name: "bob",
+                disposition: "builder",
+                avatar: "",
+                coins:{
+                    red: 0,
+                    blue: 0,
+                    green: 0,
+                    white: 0,
+                    black: 0,
+                    gold: 0
+                },
+                cards:{
+                 red: 0,
+                 blue: 0,
+                 green: 0,
+                 white: 0,
+                 black: 0
+                },
+                victoryPoints: 0,
+                   
+             }}
+        }
+        this.updatebank=this.updatebank.bind(this);
+    }
+
+    componentDidMount(){
+        this.updatebank();
+    }
+
+    updatebank(){
+        let sections = document.querySelectorAll("section[class^='coin-holder']")
+        let current_colors = this.state.colors
+
+        for(let i = 0; i < current_colors.length; i++){
+            let cSection = sections[i]
+            let cColor = current_colors[i]
+            // numCoins is not fucntional yet 'undefined'
+            let numCoins = this.state.bank.coins.cColor
+
+            console.log("cSection is ", cSection);
+            console.log("cColor is ", cColor);
+            console.log("numCOins is ", numCoins);
+            console.log("this.state.bank ", this.state.bank.coins);
+            console.log("this.state.bank ", this.state.bank.coins.cColor);
+            
+            
+
+            if (numCoins){
+                for(let i = 0; i < numCoins; i++){
+                    // cSection is not a type of node???
+                    cSection.appendChild(document.createElement('div').className = "coin-" + cColor)
+                }
+            }
+        }
+    }
+
 
     render(){
 
