@@ -1,8 +1,8 @@
 import React from 'react'
-import TeslaHero from './tesla_hero_object'
 
 
-const Overlay = () =>{
+
+const Overlay = (props) =>{
 
     const saysomething = (ev) => {
         console.log("HUZZAH");
@@ -16,8 +16,9 @@ const Overlay = () =>{
             <div className="bank">
                 <h1>THE BANK</h1>
                 <div className="bank-field" >RED
-                    <section className="coin-holder" onClick={saysomething}>
-                        {/* this token zone will be handled by state */}
+                    <section className="coin-holder" 
+                    // onClick={props.takecoin}
+                    >
                     
                     </section>
                 </div>

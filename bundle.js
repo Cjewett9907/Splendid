@@ -23022,11 +23022,9 @@ module.exports = __webpack_require__(/*! ./lib/React */ "./node_modules/react/li
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/react.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _tesla_hero_object__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./tesla_hero_object */ "./tesla_hero_object.jsx");
 
 
-
-var Overlay = function Overlay() {
+var Overlay = function Overlay(props) {
   var saysomething = function saysomething(ev) {
     console.log("HUZZAH");
     console.log("event.target is ", ev.target);
@@ -23039,8 +23037,8 @@ var Overlay = function Overlay() {
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "THE BANK"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "bank-field"
   }, "RED", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", {
-    className: "coin-holder",
-    onClick: saysomething
+    className: "coin-holder" // onClick={props.takecoin}
+
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "bank-field"
   }, "BLUE", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", {
@@ -23433,6 +23431,8 @@ function (_Component) {
   }, {
     key: "takecoin",
     value: function takecoin(ev) {
+      console.log("YOU GOT TO TAKECOIN");
+
       if (isvalidmove) {
         var new_coin_total = this.state.bank.coins[ev.target.coincolor] - 1;
         this.setState(this.state.bank.coins = new_coin_total);
@@ -23451,7 +23451,8 @@ function (_Component) {
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "div1"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_toolbar__WEBPACK_IMPORTED_MODULE_2__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_player_hand__WEBPACK_IMPORTED_MODULE_1__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_overlay__WEBPACK_IMPORTED_MODULE_3__["default"], {
-        takecoin: this.takecoin
+        takecoin: this.takecoin,
+        isvalidmove: this.isvalidmove
       })));
     }
   }]);

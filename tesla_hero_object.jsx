@@ -171,6 +171,8 @@ class TeslaHero extends Component{
     }
 
     takecoin(ev){
+
+        console.log("YOU GOT TO TAKECOIN")
         if (isvalidmove){
             
             let new_coin_total = this.state.bank.coins[ev.target.coincolor] - 1
@@ -199,7 +201,7 @@ class TeslaHero extends Component{
                 <ToolBar />
                 <PlayerHand />
                 
-                <Overlay takecoin={this.takecoin}/>
+                <Overlay takecoin={this.takecoin} isvalidmove={this.isvalidmove}/>
               
                 </div>
             </div>
