@@ -1,3 +1,4 @@
+
 .coin-holder{
     display: flex;
     flex-direction: row;
@@ -322,6 +323,34 @@ h4:hover {
 }
 
   * { padding: 0; margin: 0; border: 0;  }
+
+button{
+    width: 100%;
+    /* margin: 0px 50px 0px; */
+}
+
+div[class^='button-spacer']{
+    padding: 0px 20px 0px;
+}
+
+.button-spacer-red:hover{
+    background-color: red;
+}
+.button-spacer-green:hover{
+    background-color: green;
+}
+.button-spacer-white:hover{
+    background-color: white;
+}
+.button-spacer-blue:hover{
+    background-color: rgb(36, 36, 170);
+}
+.button-spacer-gold:hover{
+    background-color: gold;
+}
+.button-spacer-black:hover{
+    background-color: rgb(49, 45, 45);
+}
 
 
 body {

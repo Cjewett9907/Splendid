@@ -8,12 +8,37 @@ const ToolBar = () => {
             <div className="toolbar-flexer">
                 <h4>Splendid</h4>
                     <div className='take-options'>
-                        <h4>take red</h4>
-                        <h4>take blue</h4>
-                        <h4>take green</h4>
-                        <h4>take white</h4>
-                        <h4>take black</h4>
-                        <h4>take gold</h4>
+                        <div className= "button-spacer-red">
+                            <button >+1</button>
+                            <h6>Take Red</h6>
+                            <button >-1 </button>
+                        </div>
+                        <div className= "button-spacer-blue">
+                            <button >+1</button>
+                            <h6>Take Blue</h6>
+                            <button >-1 </button>
+                        </div>
+                        <div className= "button-spacer-green">
+                            <button >+1</button>
+                            <h6>Take Green</h6>
+                            <button >-1 </button>
+                        </div>
+                        <div className= "button-spacer-white">
+                            <button >+1</button>
+                            <h6>Take White</h6>
+                            <button >-1 </button>
+                        </div>
+                        <div className= "button-spacer-black">
+                            <button >+1</button>
+                            <h6>Take Black</h6>
+                            <button >-1 </button>
+                        </div>
+                        <div className= "button-spacer-gold">
+                            <button >+1</button>
+                            <h6>Take Gold</h6>
+                            <button >-1 </button>
+                        </div>
+                        
                     </div>
 
                     <div className='user-auth'>

@@ -2945,7 +2945,7 @@ module.exports = function(isValidElement, throwOnDirectAccess) {
           );
           err.name = 'Invariant Violation';
           throw err;
-        } else if ("development" !== 'production' && typeof console !== 'undefined') {
+        } else if ( true && typeof console !== 'undefined') {
           // Old behavior for people using React.PropTypes
           var cacheKey = componentName + ':' + propName;
           if (
@@ -8199,7 +8199,7 @@ var ReactCompositeComponent = {
   },
 
   _constructComponent: function (doConstruct, publicProps, publicContext, updateQueue) {
-    if ("development" !== 'production' && !doConstruct) {
+    if ( true && !doConstruct) {
       ReactCurrentOwner.current = this;
       try {
         return this._constructComponentWithoutOwner(doConstruct, publicProps, publicContext, updateQueue);
@@ -23339,9 +23339,9 @@ function (_Component) {
       imageIdx: 0,
       message: "Nope",
       imageArray: ["div1", "div2", "div3", "div4"],
-      animating: false // this.handleScroll = this.handleScroll.bind(this);
+      animating: false
+    }; // this.handleScroll = this.handleScroll.bind(this);
 
-    };
     return _this;
   }
 
@@ -23418,7 +23418,19 @@ var ToolBar = function ToolBar() {
     className: "toolbar-flexer"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "Splendid"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "take-options"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "take red"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "take blue"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "take green"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "take white"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "take black"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "take gold")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "button-spacer-red"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", null, "+1"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", null, "Take Red"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", null, "-1 ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "button-spacer-blue"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", null, "+1"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", null, "Take Blue"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", null, "-1 ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "button-spacer-green"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", null, "+1"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", null, "Take Green"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", null, "-1 ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "button-spacer-white"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", null, "+1"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", null, "Take White"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", null, "-1 ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "button-spacer-black"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", null, "+1"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", null, "Take Black"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", null, "-1 ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "button-spacer-gold"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", null, "+1"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", null, "Take Gold"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", null, "-1 "))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "user-auth"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "SHOP"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "SIGN IN"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "OPTIONS /// ")));
 };
