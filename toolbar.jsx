@@ -4,7 +4,6 @@ import React from 'react';
 const ToolBar = () => {
    
         return(
-            
             <div className="toolbar-flexer">
                 <h4>Splendid</h4>
                     <div className='take-options'>

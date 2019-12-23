@@ -65,7 +65,6 @@ class TeslaHero extends Component{
                  black: 0
                 },
                 victoryPoints: 0,
-                
 
             }}, {"player3":{
                 name: "Jerky",
@@ -190,7 +189,6 @@ class TeslaHero extends Component{
 
         }
     }
-
 
     render(){
 

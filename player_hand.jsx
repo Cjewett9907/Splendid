@@ -27,6 +27,4 @@ const PlayerHand = () => {
     
 }
 
-
-
 export default PlayerHand
