@@ -37,7 +37,6 @@ const ToolBar = () => {
                             <h6>Take Gold</h6>
                             <button >-1 </button>
                         </div>
-                        
                     </div>
 
                     <div className='user-auth'>
