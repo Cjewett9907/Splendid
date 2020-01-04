@@ -135,14 +135,14 @@ class TeslaHero extends Component{
                    
              }}
         }
-        // this.updatebank=this.updatebank.bind(this);
+        this.updatebank=this.updatebank.bind(this);
     }
 
     componentDidMount(){
         this.updatebank();
     }
 
-    updatebank = () =>{
+    updatebank(){
         let sections = document.querySelectorAll("section[class^='coin-holder']")
         let current_colors = this.state.colors
 
@@ -184,6 +184,9 @@ class TeslaHero extends Component{
             coin.style.length = '200px';
             let showsection = document.querySelectorAll("section[class^='coin-show']")
             showsection.appendChild(coin)
+
+           
+
         }
     }
 
