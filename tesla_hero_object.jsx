@@ -184,9 +184,6 @@ class TeslaHero extends Component{
             coin.style.length = '200px';
             let showsection = document.querySelectorAll("section[class^='coin-show']")
             showsection.appendChild(coin)
-
-           
-
         }
     }
 
