@@ -186,9 +186,7 @@ class TeslaHero extends Component{
             showsection.appendChild(coin)
         }
     }
-
     render(){
-
         return(
             <div>
                 
