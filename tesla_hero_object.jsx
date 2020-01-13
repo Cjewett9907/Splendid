@@ -170,7 +170,6 @@ class TeslaHero extends Component{
     }
 
     takecoin(ev){
-
         console.log("YOU GOT TO TAKECOIN")
         if (isvalidmove){
             
