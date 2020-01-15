@@ -171,11 +171,9 @@ class TeslaHero extends Component{
 
     takecoin(ev){
         console.log("YOU GOT TO TAKECOIN")
-        if (isvalidmove){
-            
+        if (isvalidmove){ 
             let new_coin_total = this.state.bank.coins[ev.target.coincolor] - 1
             this.setState(this.state.bank.coins = new_coin_total)
-
             console.log("event is ", ev)
             let coin = document.createElement('div');
             coin.className = `coin-${cColor}`;
