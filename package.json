@@ -20,6 +20,6 @@
     "react": "^15.3.0",
     "react-dom": "^15.3.0",
     "webpack": "^4.41.3",
-    "webpack-cli": "^3.3.10"
+    "webpack-cli": "^3.3.12"
   }
 }
